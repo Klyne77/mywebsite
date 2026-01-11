@@ -1,144 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Klyne | Ladies Bags & Accessories</title>
+<meta charset="UTF-8">
+<title>Klyne | Ladies Bags & Accessories</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+}
 
-        /* Header */
-        header {
-            background-color: #000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            letter-spacing: 2px;
-        }
+/* Menu */
+nav {
+    background: #222;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
 
-        /* Navigation */
-        nav {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-        }
+/* Hero */
+.hero {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 14px;
-        }
+/* Products */
+.products {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+.product button {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+/* WhatsApp Floating Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
 
-        /* Hero Section */
-        .hero {
-            background-color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        /* Products */
-        .products {
-            padding: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .product {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .product img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .product h3 {
-            margin: 10px 0 5px;
-        }
-
-        .product p {
-            color: #777;
-        }
-
-        /* Footer */
-        footer {
-            background: #000;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>KLYNE</h1>
-    <p>Elegant Ladies Bags & Accessories</p>
+<h1>KLYNE</h1>
+<p>Elegant Ladies Bags & Accessories</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Bags</a>
-    <a href="#">Accessories</a>
-    <a href="#">Contact</a>
+<a href="#">Home</a>
+<a href="#">Bags</a>
+<a href="#">Accessories</a>
+<a href="#">Contact</a>
 </nav>
 
 <section class="hero">
-    <h2>Style That Defines You</h2>
-    <p>Premium quality ladies bags & accessories by Klyne</p>
+<h2>Style That Defines You</h2>
+<p>Order premium ladies bags & accessories on WhatsApp</p>
 </section>
 
 <section class="products">
-    <div class="product">
-        <img src="https://via.placeholder.com/300x300">
-        <h3>Leather Hand Bag</h3>
-        <p>PKR 4,500</p>
-    </div>
 
-    <div class="product">
-        <img src="https://via.placeholder.com/300x300">
-        <h3>Shoulder Bag</h3>
-        <p>PKR 3,200</p>
-    </div>
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Leather Hand Bag</h3>
+<p>PKR 4,500</p>
+<button onclick="order('Leather Hand Bag')">Order on WhatsApp</button>
+</div>
 
-    <div class="product">
-        <img src="https://via.placeholder.com/300x300">
-        <h3>Ladies Wallet</h3>
-        <p>PKR 1,500</p>
-    </div>
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Shoulder Bag</h3>
+<p>PKR 3,200</p>
+<button onclick="order('Shoulder Bag')">Order on WhatsApp</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Ladies Wallet</h3>
+<p>PKR 1,500</p>
+<button onclick="order('Ladies Wallet')">Order on WhatsApp</button>
+</div>
+
 </section>
 
 <footer>
-    <p>© 2026 Klyne. All Rights Reserved.</p>
+<p>📞 WhatsApp: 0316-5312800</p>
+<p>© 2026 Klyne</p>
 </footer>
+
+<a class="whatsapp" target="_blank"
+href="https://wa.me/923165312800">
+💬
+</a>
+
+<script>
+function order(product) {
+    window.open(
+      "https://wa.me/923165312800?text=I%20want%20to%20order%20" + product,
+      "_blank"
+    );
+}
+</script>
 
 </body>
 </html>
