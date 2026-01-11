@@ -2,88 +2,109 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Klyne | Ladies Bags & Accessories</title>
+<title>Klyne | Luxury Ladies Bags & Accessories</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
+    font-family: 'Segoe UI', Arial;
+    background: #ffffff;
+    color: #111;
 }
 
 /* Header */
 header {
     background: #000;
-    color: #fff;
-    padding: 25px;
+    color: #d4af37;
     text-align: center;
+    padding: 30px 15px;
+}
+header h1 {
+    margin: 0;
+    letter-spacing: 4px;
 }
 
 /* Menu */
 nav {
-    background: #222;
+    background: #111;
+    padding: 12px;
     text-align: center;
-    padding: 10px;
 }
 nav a {
-    color: white;
+    color: #d4af37;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 /* Hero */
 .hero {
-    background: white;
-    padding: 50px 20px;
+    background: #f9f9f9;
     text-align: center;
+    padding: 50px 20px;
+}
+.hero h2 {
+    color: #000;
+}
+.hero p {
+    color: #555;
 }
 
 /* Products */
 .products {
     padding: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
 }
 .product {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 18px;
     text-align: center;
 }
 .product img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+.product h3 {
+    margin: 12px 0 5px;
+    font-size: 15px;
+}
+.product p {
+    color: #777;
+    font-size: 14px;
 }
 .product button {
-    background: #25D366;
-    color: white;
+    background: #000;
+    color: #d4af37;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 16px;
+    border-radius: 6px;
     cursor: pointer;
     margin-top: 10px;
 }
 
-/* WhatsApp Floating Button */
+/* WhatsApp */
 .whatsapp {
     position: fixed;
-    bottom: 20px;
     right: 20px;
+    bottom: 20px;
     background: #25D366;
-    color: white;
-    padding: 15px;
+    color: #fff;
+    padding: 14px;
     border-radius: 50%;
-    font-size: 22px;
     text-decoration: none;
+    font-size: 22px;
 }
 
 /* Footer */
 footer {
     background: #000;
-    color: white;
+    color: #d4af37;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
 }
 </style>
 </head>
@@ -92,7 +113,7 @@ footer {
 
 <header>
 <h1>KLYNE</h1>
-<p>Elegant Ladies Bags & Accessories</p>
+<p>Luxury Ladies Bags & Accessories</p>
 </header>
 
 <nav>
@@ -103,51 +124,44 @@ footer {
 </nav>
 
 <section class="hero">
-<h2>Style That Defines You</h2>
-<p>Order premium ladies bags & accessories on WhatsApp</p>
+<h2>Elegance in Every Detail</h2>
+<p>Order premium collection directly on WhatsApp</p>
 </section>
 
 <section class="products">
 
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Leather Hand Bag</h3>
-<p>PKR 4,500</p>
-<button onclick="order('Leather Hand Bag')">Order on WhatsApp</button>
-</div>
+<!-- PRODUCTS START -->
 
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Shoulder Bag</h3>
-<p>PKR 3,200</p>
-<button onclick="order('Shoulder Bag')">Order on WhatsApp</button>
-</div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1rZSQqJcEhFl4qD9Ixyu60jIDKRRw-O4r"><h3>Klyne Classic Handbag</h3><p>PKR 4,500</p><button onclick="order('Klyne Classic Handbag')">Order on WhatsApp</button></div>
 
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Ladies Wallet</h3>
-<p>PKR 1,500</p>
-<button onclick="order('Ladies Wallet')">Order on WhatsApp</button>
-</div>
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1_o2SlVNbbDVIQYqCgkKDeB5Cx4mI5j_l"><h3>Klyne Elegant Tote</h3><p>PKR 4,200</p><button onclick="order('Klyne Elegant Tote')">Order on WhatsApp</button></div>
+
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1BWchC_BC785XjEJntQndUc4uOO_Onk6u"><h3>Klyne Shoulder Bag</h3><p>PKR 3,800</p><button onclick="order('Klyne Shoulder Bag')">Order on WhatsApp</button></div>
+
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1a91aJ607LI8VBBfE3FmdXXxWNF1KJAAA"><h3>Klyne Premium Bag</h3><p>PKR 4,700</p><button onclick="order('Klyne Premium Bag')">Order on WhatsApp</button></div>
+
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1PHv1ONDu6j3JXOp91uhqDtC8q6VdXIpG"><h3>Klyne Urban Bag</h3><p>PKR 3,900</p><button onclick="order('Klyne Urban Bag')">Order on WhatsApp</button></div>
+
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1fXtdxULe_B1Wynt5ISDsoUY_fNm1ysJ-"><h3>Klyne Luxury Tote</h3><p>PKR 5,200</p><button onclick="order('Klyne Luxury Tote')">Order on WhatsApp</button></div>
+
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=1KXfbVtOqdeee56wLHagffq4r8vbEQIQQ"><h3>Klyne Fashion Bag</h3><p>PKR 4,100</p><button onclick="order('Klyne Fashion Bag')">Order on WhatsApp</button></div>
+
+<div class="product"><img src="https://drive.google.com/uc?export=view&id=14RCllaQccUyAsek7SAUOZOv_0hqSnBOI"><h3>Klyne Trendy Bag</h3><p>PKR 4,300</p><button onclick="order('Klyne Trendy Bag')">Order on WhatsApp</button></div>
+
+<!-- PRODUCTS END -->
 
 </section>
 
 <footer>
-<p>📞 WhatsApp: 0316-5312800</p>
-<p>© 2026 Klyne</p>
+<p>WhatsApp: 0316-5312800</p>
+<p>© 2026 Klyne. All Rights Reserved.</p>
 </footer>
 
-<a class="whatsapp" target="_blank"
-href="https://wa.me/923165312800">
-💬
-</a>
+<a class="whatsapp" href="https://wa.me/923165312800" target="_blank">💬</a>
 
 <script>
 function order(product) {
-    window.open(
-      "https://wa.me/923165312800?text=I%20want%20to%20order%20" + product,
-      "_blank"
-    );
+  window.open("https://wa.me/923165312800?text=I%20want%20to%20order%20"+product);
 }
 </script>
 
